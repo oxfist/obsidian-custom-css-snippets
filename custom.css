@@ -1,0 +1,55 @@
+/* Set header font-family to Vollkorn with less letter-spacing */
+h1,
+h2,
+h3,
+h4,
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+.cm-header,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4 {
+  font-family: Vollkorn !important;
+  letter-spacing: -0.015em;
+}
+
+/* Improved box for headings in edit mode */
+.cm-s-obsidian .cm-line.HyperMD-header {
+  padding-bottom: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Set letter spacing on headers in parent box */
+.cm-line.HyperMD-header {
+  line-height: 1.2;
+}
+
+/* MonoLisa for code! */
+code,
+.cm-inline-code {
+  font-family: MonoLisaLigatures Nerd Font !important;
+}
+
+/* Heavier bold text for better readability */
+.cm-strong {
+  font-weight: 800;
+}
+
+/* Hide file title because why would you show it? */
+div.inline-title[contenteditable='true'] {
+  display: none;
+}
+
+/* Bigger callout title */
+.callout-title {
+  font-family: Vollkorn !important;
+  font-size: 1.2em;
+}
+
+/* Show language in callouts to the bottom right */
+pre[class*='language-']:before {
+  top: unset;
+  bottom: 0.3rem;
+}
