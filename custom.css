@@ -16,9 +16,11 @@ h4 em,
 }
 
 /* Improved box for headings in edit mode */
-.cm-s-obsidian .cm-line.HyperMD-header {
+.HyperMD-header.HyperMD-header-1.cm-line,
+.HyperMD-header.HyperMD-header-2.cm-line,
+.HyperMD-header.HyperMD-header-3.cm-line,
+.HyperMD-header.HyperMD-header-4.cm-line {
   padding-bottom: 10px !important;
-  margin-bottom: 20px !important;
 }
 
 /* Set letter spacing on headers in parent box */
@@ -52,4 +54,11 @@ div.inline-title[contenteditable='true'] {
 pre[class*='language-']:before {
   top: unset;
   bottom: 0.3rem;
+}
+
+/* Disable opacity change on focus mode */
+.focus-mode .cm-s-obsidian .cm-line:not(.cm-active),
+.focus-mode .cm-s-obsidian div:not(.CodeMirror-activeline) > .CodeMirror-line {
+  opacity: 1 !important;
+  filter: saturate(1) !important;
 }
