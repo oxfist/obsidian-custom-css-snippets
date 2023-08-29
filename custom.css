@@ -30,7 +30,9 @@ h4 em,
 
 /* MonoLisa for code! */
 code,
-.cm-inline-code {
+.cm-inline-code,
+code[class*='language-'],
+pre[class*='language-'] {
   font-family: MonoLisaLigatures Nerd Font !important;
 }
 
